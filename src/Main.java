@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.TimeZone;
 
 public class Main {
@@ -18,7 +19,8 @@ public class Main {
     static TimeZone blank = calender.getTimeZone();
 
     static int dayOfMonth = calender.get(Calendar.DAY_OF_MONTH);
-    static int dayCount =
+    static Date date = calender.getTime();
+    static int dayCount = calender.getActualMaximum(Calendar.DAY_OF_MONTH);
 
 
     public static void main(String[] args) {
